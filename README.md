@@ -4,3 +4,5 @@
 
 # coffeebreak [![Build Status](https://travis-ci.org/estkin/coffeebreak.svg?branch=master)](https://travis-ci.org/estkin/coffeebreak)
 > Tool for editing CSS components
+
+Application is located at [![Application](http://kocisov.github.io/coffeebreak/)](http://kocisov.github.io/coffeebreak/)
