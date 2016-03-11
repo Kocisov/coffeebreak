@@ -1,0 +1,167 @@
+<template>
+  <div class="flex">
+    <aside>
+      <div class="logo">
+        <img src="assets/coffeebreak.svg" alt="" width="80">
+      </div>
+      <nav>
+        <li>
+          <a v-link="{ path: '/home' }">
+            <span class="icon icon-home"></span>
+          </a>
+        </li>
+        <li>
+          <a v-link="{ path: '/create' }">
+            <span class="icon icon-code"></span>
+          </a>
+        </li>
+        <li>
+          <a v-link="{ path: '/get' }">
+            <span class="icon icon-bag"></span>
+          </a>
+        </li>
+      </nav>
+    </aside>
+    <main>
+      <router-view class="view" transition="view" transition-mode="out-in" keep-alive></router-view>
+    </main>
+  </div>
+</template>
+
+<script>
+  export default {
+    name: 'App'
+  }
+</script>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  *:before,
+  *:after,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  ::selection{
+    background: #3A3E3E;
+    color: #fff;
+    text-shadow: none;
+  }
+
+  html,
+  body {
+    line-height: 1.5;
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ul,
+  li,
+  p {
+    margin: 0;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px solid #e5e5e5;
+    height: 5px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  h6 {
+    font-size: 12px;
+  }
+
+  body {
+    background: #fff;
+    color: #333;
+    font-family: Open Sans, sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    outline: 0;
+  }
+
+  .icon {
+    font-size: 24px;
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  aside {
+    width: 100px;
+    height: 100vh;
+    text-align: center;
+  }
+
+  aside li {
+    display: block;
+  }
+
+  aside li a {
+    padding: 10px;
+    text-decoration: none;
+    color: #999;
+  }
+
+  .logo {
+    margin: 5px;
+  }
+
+  main {
+    flex: 1;
+    padding: 10px;
+  }
+
+  .view {
+    transition: all .3s ease-in-out;
+  }
+
+  .view-enter, .view-leave {
+    opacity: 0;
+    transform: translate3d(10px, 0, 0);
+  }
+
+  .v-link-active {
+    color: #333;
+  }
+
+  [v-cloak] {
+    display: none;
+  }
+</style>
