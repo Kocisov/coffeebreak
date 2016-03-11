@@ -6,3 +6,8 @@
 > Tool for live editing CSS components
 
 Application is located at [(http://kocisov.github.io/coffeebreak/)](http://kocisov.github.io/coffeebreak/)
+
+#### More info will be added...
+
+## License
+MIT &copy; Kocisov
