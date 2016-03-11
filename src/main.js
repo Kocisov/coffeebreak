@@ -7,7 +7,7 @@ Vue.use(VueRouter)
 const router = new VueRouter({
   history: true,
   saveScrollPosition: true,
-  abstract: false // electron routing [true]
+  abstract: true
 })
 configRouter(router)
 
