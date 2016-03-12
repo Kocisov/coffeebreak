@@ -9,7 +9,7 @@
 <img src="https://raw.githubusercontent.com/Kocisov/coffeebreak/master/static/coffeebreak.gif" alt="">
 
 ## Run coffeebreak
-Application is located at [(http://kocisov.github.io/coffeebreak/)](http://kocisov.github.io/coffeebreak/)
+Application is located at http://kocisov.github.io/coffeebreak/
 
 ## License
 MIT &copy; Kocisov
