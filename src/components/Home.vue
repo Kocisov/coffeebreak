@@ -10,7 +10,7 @@
     name: 'Home',
     data () {
       return {
-        head: 'Home'
+        head: 'Settings'
       }
     },
     methods: {

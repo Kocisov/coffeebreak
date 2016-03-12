@@ -7,7 +7,7 @@
       <nav>
         <li>
           <a v-link="{ path: '/home' }">
-            <span class="icon icon-home"></span>
+            <span class="icon icon-cog"></span>
           </a>
         </li>
         <li>

@@ -133,6 +133,7 @@
     border: 1px solid #e5e5e5;
     border-radius: 3px;
     resize: vertical;
+    outline: 0;
   }
 
   .hw {
