@@ -6,12 +6,10 @@
 > Tool for live editing CSS components
 
 ## Screenshot
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Kocisov/coffeebreak/master/static/coffeebreak.gif" alt="">
-</p>
+<img src="https://raw.githubusercontent.com/Kocisov/coffeebreak/master/static/coffeebreak.gif" alt="">
 
 ## Run coffeebreak
-Application is located at Application is located at [(http://kocisov.github.io/coffeebreak/)](http://kocisov.github.io/coffeebreak/)
+Application is located at [(http://kocisov.github.io/coffeebreak/)](http://kocisov.github.io/coffeebreak/)
 
 ## License
 MIT &copy; Kocisov
