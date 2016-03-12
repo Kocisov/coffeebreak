@@ -6,8 +6,9 @@
   "author": "kocisov",
   "scripts": {
     "dev": "node build/dev-server.js",
-    "build": "rimraf dist && mkdirp dist && ncp static dist/static && cross-env NODE_ENV=production webpack --progress --hide-modules --config build/webpack.prod.conf.js",
-    "test": "karma start build/karma.conf.js --single-run"
+    "build": "rimraf dist && mkdirp dist && ncp static dist/static && cross-env NODE_ENV=production webpack --progress --hide-modules --config build/webpack.prod.conf.js && npm run electron",
+    "test": "karma start build/karma.conf.js --single-run",
+    "electron": "ncp electron dist"
   },
   "repository": {
     "type": "git",

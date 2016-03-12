@@ -1,0 +1,27 @@
+{
+  "name": "coffeebreak-app",
+  "version": "0.1.5",
+  "description": "Electron app for coffeebreak",
+  "main": "main.js",
+  "scripts": {
+    "serve": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kocisov/coffeebreak.git"
+  },
+  "keywords": [
+    "Javascript",
+    "Tool",
+    "CSS",
+    "Live",
+    "Edit",
+    "Coffeebreak"
+  ],
+  "author": "kocisov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kocisov/coffeebreak/issues"
+  },
+  "homepage": "https://github.com/kocisov/coffeebreak#readme"
+}
