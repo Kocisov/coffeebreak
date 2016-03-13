@@ -12,7 +12,7 @@
         </li>
         <li>
           <a v-link="{ path: '/create' }">
-            <span class="icon icon-code"></span>
+            <span class="icon icon-plus"></span>
           </a>
         </li>
         <li>
@@ -123,6 +123,11 @@
     display: flex;
   }
 
+  .box {
+    flex: 1;
+    margin-right: 5px;
+  }
+
   aside {
     width: 100px;
     height: 100vh;
@@ -146,6 +151,12 @@
   main {
     flex: 1;
     padding: 10px;
+  }
+
+  input {
+    border-radius: 3px;
+    border: 1px solid #e5e5e5;
+    padding: 2px;
   }
 
   .view {

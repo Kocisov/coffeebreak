@@ -25,20 +25,28 @@
     <div v-if="saved">
       <div class="s-green">Saved style for class <b>{{ cls }}</b></div>
     </div>
-    <div id="created">
-      <div v-if="div">
-        <div v-bind:style="style">Editing this element!</div>
+    <div class="flex">
+      <div class="box">
+        <h2 v-if="added">Preview</h2>
+        <div id="created">
+          <div v-if="div">
+            <div v-bind:style="style">Editing this element!</div>
+          </div>
+          <div v-if="button">
+            <button v-bind:style="style">Editing this element!</button>
+          </div>
+          <div v-if="span">
+            <span v-bind:style="style">Editing this element!</span>
+          </div>
+          <div v-if="input">
+            <input v-bind:style="style">Editing this element!</input>
+          </div>
+        </div>
       </div>
-      <div v-if="button">
-        <button v-bind:style="style">Editing this element!</button>
+      <div class="box">
+        <h2 v-if="added">Code</h2>
+        <textarea class="full-width" v-model="style" v-if="added"></textarea>
       </div>
-      <div v-if="span">
-        <span v-bind:style="style">Editing this element!</span>
-      </div>
-      <div v-if="input">
-        <input v-bind:style="style">Editing this element!</input>
-      </div>
-      <textarea v-model="style" v-if="added"></textarea>
     </div>
   </div>
 </template>
@@ -86,7 +94,7 @@
         this.saved = true
         setTimeout(() => {
           this.saved = false
-        }, 2500)
+        }, 1800)
       },
       cancel () {
         this.added = false
@@ -134,6 +142,11 @@
     border-radius: 3px;
     resize: vertical;
     outline: 0;
+  }
+
+  .full-width {
+    display: block;
+    width: 100% !important;
   }
 
   .hw {

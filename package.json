@@ -1,6 +1,6 @@
 {
   "name": "coffeebreak",
-  "version": "0.1.6",
+  "version": "0.1.8",
   "description": "Tool for editing CSS components",
   "main": "src/main.js",
   "author": "kocisov",
