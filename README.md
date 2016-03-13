@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Kocisov/coffeebreak/master/static/coffeebreak.png" alt="" width="200">
+  <img src="http://kocisov.github.io/coffeebreak/static/coffeebreak.png" alt="" width="200">
 </p>
 
 # coffeebreak ![version](https://img.shields.io/badge/version-0.1.9-brightgreen.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) ![notests](https://img.shields.io/badge/yet-true-ff69b4.svg)
 > Tool for live editing CSS components
 
 ## Screenshot
-<img src="https://raw.githubusercontent.com/Kocisov/coffeebreak/master/static/coffeebreak.gif" alt="">
+<img src="http://kocisov.github.io/coffeebreak/static/coffeebreak.gif" alt="">
 
 ## Run coffeebreak
 Application is located at http://kocisov.github.io/coffeebreak/
