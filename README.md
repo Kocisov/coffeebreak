@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/Kocisov/coffeebreak/master/static/coffeebreak.png" alt="" width="200">
 </p>
 
-# coffeebreak ![version](https://img.shields.io/badge/version-0.1.7-brightgreen.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) ![notests](https://img.shields.io/badge/yet-true-ff69b4.svg)
+# coffeebreak ![version](https://img.shields.io/badge/version-0.1.9-brightgreen.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) ![notests](https://img.shields.io/badge/yet-true-ff69b4.svg)
 > Tool for live editing CSS components
 
 ## Screenshot

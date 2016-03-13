@@ -1,6 +1,6 @@
 {
   "name": "coffeebreak-app",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Electron app for coffeebreak",
   "main": "main.js",
   "scripts": {
