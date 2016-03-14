@@ -7,8 +7,8 @@
   "scripts": {
     "dev": "node build/dev-server.js",
     "build": "rimraf dist && mkdirp dist && ncp static dist/static && cross-env NODE_ENV=production webpack --progress --hide-modules --config build/webpack.prod.conf.js && npm run electron",
-    "test": "mocha --compilers js:babel-register",
-    "electron": "ncp electron dist"
+    "electron": "ncp electron dist",
+    "el-serve": "electron ./dist/"
   },
   "repository": {
     "type": "git",
