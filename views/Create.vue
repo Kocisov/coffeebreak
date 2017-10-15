@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>{{ head }}</h2>
+    <h2>Create</h2>
     <div v-if="added">
       You are editing element <b>{{ selector }}</b> with class <b>{{ cls }}</b>
       <span class="hw" v-on:click="save">
@@ -22,90 +22,99 @@
       <input v-model="cls">
       <button class="btn btn-red" v-on:click="create">Create <b>{{ selector }}</b> element with class <b>{{ cls }}</b></button>
     </div>
-    <div v-if="saved">
+    <div v-show="saved">
       <div class="s-green">Saved style for class <b>{{ cls }}</b></div>
     </div>
     <div class="flex">
       <div class="box">
-        <h2 v-if="added">Preview</h2>
+        <h2 v-show="added">Preview</h2>
         <div id="created">
-          <div v-if="div">
+          <div v-show="div">
             <div v-bind:style="style">Editing this element!</div>
           </div>
-          <div v-if="button">
+          <div v-show="button">
             <button v-bind:style="style">Editing this element!</button>
           </div>
-          <div v-if="span">
+          <div v-show="span">
             <span v-bind:style="style">Editing this element!</span>
           </div>
-          <div v-if="input">
+          <div v-show="input">
             <input v-bind:style="style">Editing this element!</input>
           </div>
         </div>
       </div>
       <div class="box">
-        <h2 v-if="added">Code</h2>
-        <textarea class="full-width" v-model="style" v-if="added"></textarea>
+        <h2 v-show="added">Code</h2>
+        <textarea class="full-width" v-model="style" v-show="added"></textarea>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-  import lsz from '../store/index'
+export default {
+  data() {
+    return {
+      cls: 'name',
+      selector: 'div',
+      added: false,
+      style: '',
+      div: false,
+      span: false,
+      input: false,
+      button: false,
+      saved: false,
+    }
+  },
+  methods: {
+    create() {
+      this.added = true
 
-  export default {
-    name: 'Create',
-    data () {
-      return {
-        head: 'Create',
-        cls: 'name',
-        selector: 'div',
-        added: false,
-        style: '',
-        div: false,
-        span: false,
-        input: false,
-        button: false,
-        saved: false
+      switch (this.selector) {
+        case 'div':
+          this.div = true
+          break
+
+        case 'button':
+          this.button = true
+          break
+
+        case 'span':
+          this.span = true
+          break
+
+        case 'input':
+          this.input = true
+          break
+
+        default:
+          return false
       }
     },
-    methods: {
-      create () {
-        this.added = true
-        switch (this.selector) {
-          case 'div':
-            this.div = true
-            break
-          case 'button':
-            this.button = true
-            break
-          case 'span':
-            this.span = true
-            break
-          case 'input':
-            this.input = true
-            break
-        }
-      },
-      save () {
-        lsz.set(this.cls, this.style)
-        this.cancel()
-        this.saved = true
-        setTimeout(() => {
-          this.saved = false
-        }, 1800)
-      },
-      cancel () {
-        this.added = false
-        this.div = false
-        this.span = false
-        this.button = false
-        this.input = false
-        this.style = ''
-      }
-    }
-  }
+    save() {
+      this.$store.dispatch({
+        type: 'CREATE_STYLE',
+        name: this.cls,
+        style: this.style,
+      })
+
+      this.cancel()
+      this.saved = true
+
+      setTimeout(() => {
+        this.saved = false
+      }, 1500)
+    },
+    cancel() {
+      this.added = false
+      this.div = false
+      this.span = false
+      this.button = false
+      this.input = false
+      this.style = ''
+    },
+  },
+}
 </script>
 
 <style>

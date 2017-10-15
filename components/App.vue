@@ -2,23 +2,18 @@
   <div class="flex">
     <aside>
       <div class="logo">
-        <img src="assets/coffeebreak.svg" alt="" width="80">
+        <img src="../assets/coffeebreak.svg" alt="" width="80">
       </div>
       <nav>
         <li>
-          <a v-link="{ path: '/home' }">
-            <span class="icon icon-cog"></span>
-          </a>
-        </li>
-        <li>
-          <a v-link="{ path: '/create' }">
+          <router-link :to="{ path: '/' }" exact>
             <span class="icon icon-plus"></span>
-          </a>
+          </router-link>
         </li>
         <li>
-          <a v-link="{ path: '/get' }">
+          <router-link :to="{ path: '/get' }">
             <span class="icon icon-bag"></span>
-          </a>
+          </router-link>
         </li>
       </nav>
     </aside>
@@ -27,12 +22,6 @@
     </main>
   </div>
 </template>
-
-<script>
-  export default {
-    name: 'App'
-  }
-</script>
 
 <style>
   * {
@@ -168,7 +157,7 @@
     transform: translate3d(10px, 0, 0);
   }
 
-  .v-link-active {
+  .router-link-active {
     color: #333;
   }
 
