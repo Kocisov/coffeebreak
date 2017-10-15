@@ -2,7 +2,7 @@
   <img src="http://kocisov.github.io/coffeebreak/static/coffeebreak.png" alt="" width="200">
 </p>
 
-# coffeebreak ![version](https://img.shields.io/badge/version-0.1.9-brightgreen.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) ![notests](https://img.shields.io/badge/yet-true-ff69b4.svg)
+# coffeebreak ![version](https://img.shields.io/badge/version-0.2.0-brightgreen.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) ![notests](https://img.shields.io/badge/yet-true-ff69b4.svg)
 > Tool for live editing CSS written in Vue
 
 ## Screenshot
@@ -17,14 +17,16 @@ git clone https://github.com/Kocisov/coffeebreak.git
 cd coffeebreak
 npm install
 
-npm start // for devServer with hot reload
-npm run build // build for production
+# for devServer with hot reload
+npm start
+# build for production
+npm run build
 ```
 
 ## Contribution
-* 1. Fork repo
-* 2. Make some code
-* 3. Pull request
-* 4. Be happy :)
+1. Fork repo
+2. Make some code
+3. Pull request
+4. Be happy :)
 
 All contributions are very appreciated!
