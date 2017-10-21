@@ -5,8 +5,8 @@
 # coffeebreak ![version](https://img.shields.io/badge/version-0.2.0-brightgreen.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) ![notests](https://img.shields.io/badge/yet-true-ff69b4.svg)
 > Tool for live editing CSS written in Vue
 
-## Screenshot
-<img src="http://kocisov.github.io/coffeebreak/static/coffeebreak.gif" alt="">
+## Work in progress
+1. Dark-theme
 
 ## Run coffeebreak
 Application is located at http://kocisov.github.io/coffeebreak/
